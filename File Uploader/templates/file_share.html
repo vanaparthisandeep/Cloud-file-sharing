@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Share</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #file-share-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: #555555;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        input[type="file"] {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            align-self: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="file-share-container">
+        <h1>Multi week File sharing Project</h1>
+        <form method="post" action="/file_share" enctype="multipart/form-data">
+            <label for="email1">First Email:</label>
+            <input type="email" id="email1" name="email" required>
+            <label for="email2">Second Email:</label>
+            <input type="email" id="email2" name="email">
+            <label for="email3">Third Email:</label>
+            <input type="email" id="email3" name="email">
+            <label for="email4">Fourth Email:</label>
+            <input type="email" id="email4" name="email">
+            <label for="email5">Fifth Email:</label>
+            <input type="email" id="email5" name="email">
+            <label for="file">Choose a file:</label>
+            <input type="file" id="file" name="file" required>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
